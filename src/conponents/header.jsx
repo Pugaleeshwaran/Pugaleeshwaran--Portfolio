@@ -6,8 +6,8 @@ const Header = () => {
             <div className="header-left">
                 <img src={profile} alt="" />
                 <h2>Pugaleeshwaran </h2>
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
+                <a href=".header">Home</a>
+                <a href=".about-all">About Me</a>
                 <a href="#">My Work</a>
                 <a href="#">Resume</a>
                 <a href="#">Contact</a>

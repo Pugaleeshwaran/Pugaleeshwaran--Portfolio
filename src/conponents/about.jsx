@@ -9,10 +9,10 @@ const About = () => {
                 <div className="about-header-main">
                     <h3>I am <span>Pugaleeshwaran</span> , A MERN Stack <br />Developer</h3>
                     <p className="about-name">Hii, My Name Is Pugaleeshwaran.I am MERN Stack Developer.</p>
-                    <p>I am Proficient in Web development Skill Like:</p>
-                    <p>HTML,CSS,JavaScript,BootStrap,Tailwind CSS,React.js,Node.js,Express.js,MongoDB,SQL,Java.</p>
-                    <p style={{marginTop:"20px"}}>I am Proficient in Grapic Designing Skill Like:</p>
-                    <p> Adobe Premire Pro , After Effect, PhotoShop, Canva, Capcut .</p>
+                    <p>My Web development Skill Like :</p>
+                    <p style={{marginTop:"10px",color:"white"}}> HTML,CSS,JavaScript,BootStrap,Tailwind CSS,React.js,Node.js,Express.js,MongoDB,SQL,Java.</p>
+                    <p style={{marginTop:"20px"}}>My Grapic Designing Skill Like :</p>
+                    <p style={{marginTop:"10px",color:"white"}}> Adobe Premire Pro , After Effect, PhotoShop, Canva, Capcut .</p>
                 </div>
                 <div className="about-header-side">
                     <div className="side-detial">
