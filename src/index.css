@@ -10,24 +10,52 @@ body {
 
 .header {
   display: flex;
+  overflow: hidden;
+  width: 99vw;
 }
+#menubar{
+  font-size: 40px;
+  background-color: transparent;
+  position: absolute;
+  color: white;
+  z-index: 99;
+  top: 20px;
+  left: 2%;
+  color: #f53b57;
+  cursor: pointer;
+  transition: all 500ms;
+  
 
+}
+#menubar:hover{
+  color: #e9b949;
+}
+#close{
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  display: none;
+}
 .header-left {
   display: flex;
   background-attachment: fixed;
-  position: fixed;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   background-color: #111418;
   width: 15%;
+  overflow: hidden;
   z-index: 100;
   height: 100vh;
+  position: fixed;
 }
 
 .header-left img {
   width: 80%;
-  height: 25%;
+  height: 27%;
   border-radius: 100%;
   object-fit: cover;
   border: 5px #343A40 solid;
@@ -228,7 +256,16 @@ body {
 }
 @media screen and (max-width:1400px) {
   .header-left{
-    display: none;
+    transition: all 1s;
+    transform: translateX(-100%);
+    width: 17%;
+  }
+  #menubar{
+    display: block;
+    position: fixed;
+  }
+  #close{
+    display: block;
   }
   .header-right-text{
     display: flex;
@@ -245,6 +282,10 @@ body {
   .myname{
     font-size: 25px;
   }
+  .header-left{
+    width: 21%;
+    white-space: nowrap;
+  }
 }
 @media screen and (max-width:800px){
   .myname{
@@ -252,6 +293,11 @@ body {
   }
   .based {
     font-size: 30px;
+  }.header-left{
+    width: 31%;
+  }
+  .header-left h2{
+    font-size: 20px;
   }
 }
 @media screen and (max-width:480px) {
@@ -264,6 +310,12 @@ body {
   .myname{
     font-size: 13px;
   }
+  .header-left{
+    width: 55%;
+  }
+  .header-left h2{
+    font-size: 20px;
+  }
 }
 
 /* -----------------about----------------- */
@@ -271,6 +323,9 @@ body {
 .about-all{
   margin-top: 30px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
 }
 .about-header {
   width: 60%;
@@ -468,24 +523,33 @@ body {
   }
 }
 @media screen and (max-width:480px) {
+  .about-all{
+    width: 100%;
+  }
   .about-header{
     left: -180px;
-    display: inline-block;
+    display: block;
     width: 80%;
   }
   .about-header h1
   {
     font-size: 30px;
+    text-align: center;
     left: 260px;
+    width: 80%;
   }
   .about-header h2{
     font-size: 20px;
     top: 35px;
     left: 100%;
     text-align: center;
+    
   }
   .about-header-main h3{
-    font-size: 20px;
+    font-size:16px;
+ }
+ .about-header-main p{
+  font-size: 12px;
  }
  .about-header-details{
   top: 70px;
@@ -496,10 +560,12 @@ body {
 .about-header-details{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 90%;
     text-align: center;
     align-items: center;
+    left: 6%;
+    overflow: hidden;
+    
   }
 }
 
-/* ----------about END----------------- */
