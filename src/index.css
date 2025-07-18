@@ -13,7 +13,8 @@ body {
   overflow: hidden;
   width: 99vw;
 }
-#menubar{
+
+#menubar {
   font-size: 40px;
   background-color: transparent;
   position: absolute;
@@ -24,13 +25,15 @@ body {
   color: #f53b57;
   cursor: pointer;
   transition: all 500ms;
-  
+
 
 }
-#menubar:hover{
+
+#menubar:hover {
   color: #e9b949;
 }
-#close{
+
+#close {
   font-size: 30px;
   color: white;
   cursor: pointer;
@@ -39,6 +42,7 @@ body {
   top: 1%;
   display: none;
 }
+
 .header-left {
   display: flex;
   background-attachment: fixed;
@@ -254,20 +258,24 @@ body {
   outline-offset: 3px;
   background: linear-gradient(#e9b949, #f53b57);
 }
+
 @media screen and (max-width:1400px) {
-  .header-left{
+  .header-left {
     transition: all 1s;
     transform: translateX(-100%);
     width: 17%;
   }
-  #menubar{
+
+  #menubar {
     display: block;
     position: fixed;
   }
-  #close{
+
+  #close {
     display: block;
   }
-  .header-right-text{
+
+  .header-right-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,58 +283,71 @@ body {
     width: 50vw;
     left: 25%;
   }
- 
-  
+
+
 }
-@media screen  and (max-width:1200px){
-  .myname{
+
+@media screen and (max-width:1200px) {
+  .myname {
     font-size: 25px;
   }
-  .header-left{
+
+  .header-left {
     width: 21%;
     white-space: nowrap;
   }
 }
-@media screen and (max-width:800px){
-  .myname{
+
+@media screen and (max-width:800px) {
+  .myname {
     font-size: 16px;
   }
+
   .based {
     font-size: 30px;
-  }.header-left{
+  }
+
+  .header-left {
     width: 31%;
   }
-  .header-left h2{
+
+  .header-left h2 {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width:480px) {
-   .header-right-text h1{
+  .header-right-text h1 {
     font-size: 40px;
   }
+
   .based {
     font-size: 30px;
   }
-  .myname{
+
+  .myname {
     font-size: 13px;
   }
-  .header-left{
+
+  .header-left {
     width: 57%;
   }
-  .header-left h2{
+
+  .header-left h2 {
     font-size: 20px;
   }
 }
 
 /* -----------------about----------------- */
 
-.about-all{
+.about-all {
   margin-top: 30px;
   position: relative;
   display: flex;
   flex-direction: column;
   height: 700px;
 }
+
 .about-header {
   width: 60%;
   position: relative;
@@ -347,7 +368,8 @@ body {
   color: #383B3F;
   white-space: nowrap;
 }
-.about-header h2{
+
+.about-header h2 {
   color: white;
   display: inline-block;
   position: absolute;
@@ -360,160 +382,191 @@ body {
   top: 50px;
   white-space: nowrap;
 }
-.about-header span{
-  border-bottom:5px solid #f53b57;
+
+.about-header span {
+  border-bottom: 5px solid #f53b57;
 }
-.about-header-details{
+
+.about-header-details {
   position: absolute;
   height: 100vh;
   top: 220px;
 }
-.about-header-main h3{
+
+.about-header-main h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 40px;
-  color: white;  
+  color: white;
 }
-.about-header-main p{
-   font-family: "Poppins", sans-serif;
+
+.about-header-main p {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #8CA3AF;
 }
-.about-header-main span{
-  color: #f53b57 ;
+
+.about-header-main span {
+  color: #f53b57;
 }
-.about-header-details{
+
+.about-header-details {
   display: flex;
   position: absolute;
   left: 18%;
- gap: 50px;
- margin-top: 30px;
+  gap: 50px;
+  margin-top: 30px;
 }
-.about-header-side{
+
+.about-header-side {
   margin-top: 10px;
 }
-.about-header-side p{
+
+.about-header-side p {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   color: white;
   margin: 5px 0;
 }
-.about-header-side span{
-   font-family: "Poppins", sans-serif;
+
+.about-header-side span {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.resume-but{
+
+.resume-but {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.resume-but a{
+
+.resume-but a {
   text-decoration: none;
-   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   color: white;
   padding: 10px 15px;
 
 }
-.mails{
-  color: #f53b57 ;
+
+.mails {
+  color: #f53b57;
 }
-.about-name{
+
+.about-name {
   margin-bottom: 20px;
 }
-.docv{
-  background:linear-gradient(#f53b57 ,#e9b949);
-  border-radius: 10px;
-  text-align: center;
-}
-.secv{
-  background:linear-gradient( #e9b949,#f53b57);
-  border-radius: 10px;
-  text-align: center;
-}
-@media screen and (max-width:1400px) {
- .about-all{
-  width: 98vw;
-  position: relative;
- }
- .about-header{
-  left: -300px;
-  width: 80%;
- }
- .about-header-details{
-  width: 100%;
-  position: absolute;
-  left: 100px;
 
- }
+.docv {
+  background: linear-gradient(#f53b57, #e9b949);
+  border-radius: 10px;
+  text-align: center;
 }
-@media screen  and (max-width:1200px){
-  .about-header-details{
+
+.secv {
+  background: linear-gradient(#e9b949, #f53b57);
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width:1400px) {
+  .about-all {
+    width: 98vw;
+    position: relative;
+  }
+
+  .about-header {
+    left: -300px;
+    width: 80%;
+  }
+
+  .about-header-details {
+    width: 100%;
+    position: absolute;
+    left: 100px;
+
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .about-header-details {
     display: flex;
     flex-direction: column;
     width: 80%;
     text-align: center;
   }
-  .about-header-main h3{
+
+  .about-header-main h3 {
     font-size: 30px;
- }
+  }
 }
-@media screen and (max-width:800px){
-  .about-header{
+
+@media screen and (max-width:800px) {
+  .about-header {
     left: -180px;
   }
-  .about-header h1
-  {
+
+  .about-header h1 {
     font-size: 60px;
   }
-  .about-header h2{
+
+  .about-header h2 {
     font-size: 25px;
     top: 30px;
     left: 75%;
     text-align: center;
   }
-  .about-header-main h3{
+
+  .about-header-main h3 {
     font-size: 20px;
- }
- .about-header-details{
-  top: 80px;
- }
- .about-header-side{
-  margin-top: 0;
+  }
+
+  .about-header-details {
+    top: 80px;
+  }
+
+  .about-header-side {
+    margin-top: 0;
+  }
 }
-}
+
 @media screen and (max-width:600px) {
-  
-   .about-header{
+
+  .about-header {
     left: -180px;
   }
-  .about-header h1
-  {
+
+  .about-header h1 {
     font-size: 30px;
     left: 300px;
   }
-  .about-header h2{
+
+  .about-header h2 {
     font-size: 20px;
     top: 35px;
     left: 90%;
     text-align: center;
   }
-  .about-header-main h3{
+
+  .about-header-main h3 {
     font-size: 20px;
- }
- .about-header-details{
-  top: 70px;
- }
- .about-header-side{
-  margin-top: 0;
-}
-.about-header-details{
+  }
+
+  .about-header-details {
+    top: 70px;
+  }
+
+  .about-header-side {
+    margin-top: 0;
+  }
+
+  .about-header-details {
     display: flex;
     flex-direction: column;
     width: 65%;
@@ -522,42 +575,49 @@ body {
     overflow: hidden;
   }
 }
+
 @media screen and (max-width:480px) {
-  .about-all{
+  .about-all {
     width: 100%;
   }
-  .about-header{
+
+  .about-header {
     left: -180px;
     display: block;
     width: 80%;
   }
-  .about-header h1
-  {
-    font-size: 30px;
+
+  .about-header h1 {
     text-align: center;
     left: 260px;
     width: 80%;
   }
-  .about-header h2{
-    font-size: 20px;
+
+  .about-header h2 {
+    font-size: 15px;
     top: 35px;
-    left: 100%;
+    left: 105%;
     text-align: center;
-    
+
   }
-  .about-header-main h3{
-    font-size:16px;
- }
- .about-header-main p{
-  font-size: 12px;
- }
- .about-header-details{
-  top: 70px;
- }
- .about-header-side{
-  margin-top: 0;
-}
-.about-header-details{
+
+  .about-header-main h3 {
+    font-size: 16px;
+  }
+
+  .about-header-main p {
+    font-size: 12px;
+  }
+
+  .about-header-details {
+    top: 70px;
+  }
+
+  .about-header-side {
+    margin-top: 0;
+  }
+
+  .about-header-details {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -565,7 +625,538 @@ body {
     align-items: center;
     left: 6%;
     overflow: hidden;
-    
+
   }
 }
 
+/* -------title----------- */
+.title-list {
+  width: 99vw;
+  position: relative;
+}
+
+.title-list h1 {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 130px;
+  position: relative;
+  left: 33%;
+  letter-spacing: 10px;
+  color: #494E53;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.title-list h2 {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+  position: absolute;
+  left: 48%;
+  top: 55px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.title-span {
+  border-bottom: #f53b57 5px solid;
+  margin-top: 5px;
+}
+
+.project {
+  position: relative;
+  padding: 15px;
+  width: 82.2vw;
+  background-color: #343A40;
+  padding-left: 15%;
+}
+
+.project-img {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 25px;
+  border-radius: 15px;
+
+}
+
+.project-img img {
+  width: 90%;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.project-img img:hover {
+  transition: all 300ms linear;
+  transform: scale(1.1);
+  height: 200px;
+  filter: brightness(0.1);
+
+}
+
+.project-img-tfc {
+  position: relative;
+
+}
+
+.project-img-tfc-con h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.project-img-tfc-con p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+}
+
+.project-img-tfc-con button {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#e9b949, #f53b57);
+  padding: 5px 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  ;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.project-img-tfc {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img-tfc img {
+  transition: transform 0.5s ease;
+}
+
+.project-img-tfc:hover img {
+  transition: all ease 500ms;
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+
+.project-img-tfc-con {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color: transparent;
+  max-width: 90%;
+  height: 200px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.project-img-tfc-con p {
+  text-align: center;
+}
+
+
+.project-img-tfc:hover .project-img-tfc-con {
+  opacity: 100%;
+  transform: scale(1.1);
+
+}
+
+.project-img-more {
+  width: 35%;
+  background-color: #1F2937;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  border-radius: 15px;
+  height: 200px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.project-img-more h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.project-img-more p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project-img-more button {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#e9b949, #f53b57);
+  padding: 5px 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.all-project {
+  margin-top: 10px;
+  padding: 10px 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-list {
+  width: 32%;
+  position: relative;
+}
+
+.project-list img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+  transition: all ease 500ms;
+  margin-top: 20px;
+}
+
+.project-list:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.5);
+}
+
+.project-list-con {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: white;
+  left: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.project-list-con button {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#e9b949, #f53b57);
+  padding: 5px 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: all 500ms ease;
+}
+
+.project-list-con h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.project-list-con p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.project-list-con button:hover {
+  border: #f53b57 2px solid;
+  background: transparent;
+  color: #f53b57;
+
+}
+
+.project-list:hover .project-list-con {
+  transition: all ease 500ms;
+  opacity: 100%;
+  transform: scale(1.1);
+
+}
+@media screen and (max-width:1400px) {
+ .title-list h1 {
+    font-size: 120px;
+    text-align: center;
+    left: 25%;
+
+  }
+
+  .title-list h2 {
+    font-size: 50px;
+    top: 50px;
+    left: 42%;
+    text-align: center;
+  }
+
+  .project {
+    width: 100vw;
+    padding-left:0 ;
+  }
+
+  .project-img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+   .project-img-more p{
+    font-size: 15px;
+  }
+
+  .all-project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-list {
+    width: 40%;
+    position: relative;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .title-list h1 {
+    font-size: 90px;
+    text-align: center;
+
+  }
+
+  .title-list h2 {
+    font-size: 50px;
+    top: 32px;
+    left: 36%;
+    text-align: center;
+  }
+
+  .project {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .project-img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .project-img-more {
+    font-size: 20px;
+
+  }
+
+  .all-project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-list {
+    width: 40%;
+    position: relative;
+
+  }
+  .project-list-con p{
+    font-size: 14px;
+    white-space: wrap;
+  }
+   .project-img-more p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .title-list h1 {
+    font-size: 50px;
+    text-align: center;
+
+  }
+
+  .title-list h2 {
+    font-size: 25px;
+    top: 20px;
+    left:39%;
+    text-align: center;
+  }
+
+  .project {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .project-img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .project-img-more {
+    width: 62%;
+    font-size: 20px;
+    margin-right: 30px;
+
+  }
+
+  .all-project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-list {
+    width: 48%;
+    position: relative;
+
+  }
+  .project-list-con p{
+    font-size: 10px;
+    white-space: wrap;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .title-list h1 {
+    font-size: 50px;
+    text-align: center;
+    left: 20%;
+
+  }
+
+  .title-list h2 {
+    font-size: 25px;
+    top: 20px;
+    left:39%;
+    text-align: center;
+  }
+
+  .project {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .project-img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .project-img-more {
+    width: 88%;
+    font-size: 20px;
+    margin-right: 30px;
+
+  }
+  .project-img-more p{
+    font-size: 15px;
+  }
+
+  .all-project {
+    display: flex;
+    flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  }
+
+  .project-list {
+    width: 90%;
+    position: relative;
+
+  }
+  .project-list-con p{
+    font-size: 10px;
+    white-space: wrap;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .title-list h1 {
+    font-size: 30px;
+    text-align: center;
+    left: 85px;
+
+  }
+
+  .title-list h2 {
+    font-size: 15px;
+    top: 10px;
+    left: 42%;
+    text-align: center;
+  }
+
+  .project {
+    width: 100vw;
+    padding-left: 0;
+  }
+
+  .project-img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .project-img-more {
+    font-size: 10px;
+    width: 90%;
+  }
+
+  .all-project {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .project-list {
+    width: 100%;
+    position: relative;
+  }
+
+}
